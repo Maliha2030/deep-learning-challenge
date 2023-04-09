@@ -89,3 +89,9 @@ How many neurons, layers, and activation functions did you select for your neura
 Were you able to achieve the target model performance?
 What steps did you take in your attempts to increase model performance?
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+
+##References
+#Data Analytics Bootcamp resources
+1. Code for choosing a cutoff value and create a list of application types / classifications to be replaced:
+https://github.com/khadra1/deep-learning-challenge/blob/main/notebooks/AlphabetSoupCharity_Optimization1.ipynb
+2. Data Analytics Bootcamp resources
