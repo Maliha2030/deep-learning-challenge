@@ -1,7 +1,7 @@
 # deep-learning-challenge
 
 ## Instructions
-## Step 1: Preprocess the Data
+### Step 1: Preprocess the Data
 Using your knowledge of Pandas and scikit-learn’s StandardScaler(), you’ll need to preprocess the dataset. This step prepares you for Step 2, where you'll compile, train, and evaluate the neural network model.
 
 Read in the charity_data.csv to a Pandas DataFrame, and be sure to identify the following in your dataset:
@@ -21,7 +21,7 @@ Split the preprocessed data into a features array, X, and a target array, y. Use
 
 Scale the training and testing features datasets by creating a StandardScaler instance, fitting it to the training data, then using the transform function.
 
-## Step 2: Compile, Train, and Evaluate the Model
+### Step 2: Compile, Train, and Evaluate the Model
 Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup-funded organization will be successful based on the features in the dataset. You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
 
 Continue using the file in Google Colab in which you performed the preprocessing steps from Step 1.
@@ -44,7 +44,7 @@ Evaluate the model using the test data to determine the loss and accuracy.
 
 Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity.h5.
 
-## Step 3: Optimize the Model
+### Step 3: Optimize the Model
 Using your knowledge of TensorFlow, optimize your model to achieve a target predictive accuracy higher than 75%.
 
 Use any or all of the following methods to optimize your model:
@@ -73,23 +73,25 @@ Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity_
 
 A report on the performance of the deep learning model created for Alphabet Soup.
 
-Overview of the analysis: Purpose of this analysis. As with any machine learning model, neural networks and deep learning models are not perfect. 
+### Data Preprocessing
 
-Data Preprocessing
+Variable(s) that are the target(s) for my model: APPLICATION_TYPE,	AFFILIATION	CLASSIFICATION,	USE_CASE,	ORGANIZATION,	STATUS,	INCOME_AMT,	SPECIAL_CONSIDERATIONS,	ASK_AMT,	IS_SUCCESSFUL
 
-Variable(s) that are the target(s) for my model? APPLICATION_TYPE,	AFFILIATION	CLASSIFICATION,	USE_CASE,	ORGANIZATION,	STATUS,	INCOME_AMT,	SPECIAL_CONSIDERATIONS,	ASK_AMT,	IS_SUCCESSFUL
-Variable(s) that are the features for my model? APPLICATION_TYPE
+Variable(s) that are the features for my model: APPLICATION_TYPE
+
 Variable(s) that should be removed from the input data because they are neither targets nor features: EIN and NAME
 
-Compiling, Training, and Evaluating the Model
+### Compiling, Training, and Evaluating the Model
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why? 2 layers were selected in order to consider more interactions between variables and optimise the model.
+How many neurons, layers, and activation functions did you select for your neural network model, and why? 
+2 layers were selected in order to consider more interactions between variables and optimise the model.
 
 Were you able to achieve the target model performance? No 
+
 What steps did you take in your attempts to increase model performance? Increasing the number of epochs.
 
-## As my model did not meet performance expectations, I increased the number of training epochs from 100 to 120. As the number of epochs increases, so does the
-amount of information provided to each neuron. Increasing the epochs will increase  the likelihood that model will achieve optimal weight coefficients however there is an increased risk of overfitting.
+As my model did not meet performance expectations, I increased the number of training epochs from 100 to 120. As the number of epochs increases, so does the
+amount of information provided to each neuron. Increasing the epochs will increase  the likelihood that model will achieve optimal weight coefficients however there is an increased risk of overfitting. As with any machine learning model, neural networks and deep learning models are not perfect. 
 
 Summary: My neural network model has an accuracy of 0.7258309125900269. After optimisation by increasing number of epochs accuracy decreased slightly to  0.7232652902603149 perhaps due to overfitting. An alternative model optimization technique such as adding more neurons could speed up the model and may reduce loss. Alternatively adding more layers would consider more interactions between variables.
 
