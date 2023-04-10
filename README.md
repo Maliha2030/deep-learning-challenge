@@ -69,26 +69,30 @@ Design a neural network model, and be sure to adjust for modifications that will
 
 Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity_Optimization.h5.
 
-Step 4: Write a Report on the Neural Network Model
-For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for Alphabet Soup.
+## Report on the Neural Network Model
 
-The report should contain the following:
+A report on the performance of the deep learning model created for Alphabet Soup.
 
-Overview of the analysis: Explain the purpose of this analysis.
-
-Results: Using bulleted lists and images to support your answers, address the following questions:
+Overview of the analysis: Purpose of this analysis. As with any machine learning model, neural networks and deep learning models are not perfect. 
 
 Data Preprocessing
 
-What variable(s) are the target(s) for your model?
-What variable(s) are the features for your model?
-What variable(s) should be removed from the input data because they are neither targets nor features?
+Variable(s) that are the target(s) for my model? APPLICATION_TYPE,	AFFILIATION	CLASSIFICATION,	USE_CASE,	ORGANIZATION,	STATUS,	INCOME_AMT,	SPECIAL_CONSIDERATIONS,	ASK_AMT,	IS_SUCCESSFUL
+Variable(s) that are the features for my model? APPLICATION_TYPE
+Variable(s) that should be removed from the input data because they are neither targets nor features: EIN and NAME
+
 Compiling, Training, and Evaluating the Model
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take in your attempts to increase model performance?
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+How many neurons, layers, and activation functions did you select for your neural network model, and why? 2 layers were selected in order to consider more interactions between variables and optimise the model.
+
+Were you able to achieve the target model performance? No 
+What steps did you take in your attempts to increase model performance? Increasing the number of epochs.
+
+## As my model did not meet performance expectations, I increased the number of training epochs from 100 to 120. As the number of epochs increases, so does the
+amount of information provided to each neuron. Increasing the epochs will increase  the likelihood that model will achieve optimal weight coefficients however there is an increased risk of overfitting.
+
+Summary: My neural network model has an accuracy of 0.7258309125900269. After optimisation by increasing number of epochs accuracy decreased slightly to  0.7232652902603149 perhaps due to overfitting. An alternative model optimization technique such as adding more neurons could speed up the model and may reduce loss. Alternatively adding more layers would consider more interactions between variables.
+
 
 ## References
 1. Code for choosing a cutoff value and create a list of application types / classifications to be replaced:
